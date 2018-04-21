@@ -1,4 +1,4 @@
-pragma solidity ^0.4.2
+pragma solidity ^0.4.2;
 
 contract StockExchange {
 
@@ -26,7 +26,7 @@ contract StockExchange {
     Transaction("Sell", msg.sender);
   }
 
-  function getBalance(address addr) return(uint) {
+  function getBalance(address addr) returns(uint) {
     return balances[addr];
   }
 
